@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css"/>
+</head>
+<body>
+    <header>
+        <h1>to-do</h1>
+    </header>
+    <section class="tasks">
+        <h2>tasks</h2>
+        <ul class="tasks__wrapper">
+            <li class="add-task">
+                <i class="add-task__icon ph ph-plus"></i>
+                <p class="add-task__input" contenteditable="true"><span class="add-task__placeholder">inserir nova task...</span></p>
+            </li>
+        </ul>
+        <div class="tasks__interactive">
+            <button class="tasks__conclude tasks__button">CONCLUIR TUDO</button>
+            <button class="tasks__clean tasks__button">LIMPAR</button>
+        </div>
+    </section>
+    <footer>
+        <p>to-do • por LF</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
