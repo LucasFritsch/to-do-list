@@ -33,3 +33,6 @@ as tasks na página.
 pode ser reduzida para melhorar manutenção do código.
 - A lógica de estado das tasks (marcada ou não marcada) depende de manipulação direta de classes do DOM. Pretendo aprender formar de melhorar
 essa lógica de forma independente do DOM.
+
+## Live Preview
+Veja o projeto no ar em https://lucasfritsch.github.io/to-do-list
