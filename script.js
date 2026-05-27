@@ -87,4 +87,5 @@ function concludeTasks(){
 function cleanTasks(){
     tasks.forEach((task) => task.remove());
     newTaskItem.style.display = 'flex';
+    updateTaskList();
 }
