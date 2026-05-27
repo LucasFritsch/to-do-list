@@ -5,6 +5,7 @@ const newTaskInput = document.querySelector('.add-task__input');
 const newtaskPlaceholder = document.querySelector('.add-task__placeholder')
 const concludeButton = document.querySelector('.tasks__conclude');
 const cleanButton = document.querySelector('.tasks__clean');
+let tasksLimit = 10;
 
 newTaskInput.addEventListener('keydown', addTask);
 newTaskInput.addEventListener('blur', cancelNewTask)
@@ -35,7 +36,7 @@ function addTask(event) {
         if(text == ''){
             window.alert("a nova task não pode estar vazia");
             return;
-        }else if(tasksCounter > 10){
+        }else if(tasksCounter > tasksLimit){
             window.alert('numero máximo de tasks alcançado');
             newTaskInput.innerText = '';
             newTaskItem.style.display = 'none';
